@@ -65,15 +65,35 @@ function singleRound(playerSelection, getComputerChoice){
 
 /* This function plays five rounds of Rock Paper Scissors */
 
-function game(){
-    
-    let player = 0;
-    let computer =0;
-    console.log(singleRound(playerSelection(),getComputerChoice()));
-    console.log(singleRound(playerSelection(),getComputerChoice()));
-    console.log(singleRound(playerSelection(),getComputerChoice()));
-    console.log(singleRound(playerSelection(),getComputerChoice()));
-    console.log(singleRound(playerSelection(),getComputerChoice()));
+function game() {
+    let playerScore = 0;
+    let computerScore = 0;
+    let round = 0;
+
+    while (round < 5) { // Play 5 rounds
+        let result = singleRound(playerSelection(), getComputerChoice());
+        console.log(`Round ${round + 1}: ${result}`); // Display round result
+
+        // Update scores based on result
+        if (result.includes("You win")) {
+            playerScore++;
+        } else if (result.includes("You lose")) {
+            computerScore++;
+        }
+
+        round++; // Move to the next round
+    }
+
+    // Display final results
+    console.log(`Final Score - Player: ${playerScore}, Computer: ${computerScore}`);
+
+    if (playerScore > computerScore) {
+        console.log("Congratulations! You won the game! 🎉");
+    } else if (computerScore > playerScore) {
+        console.log("Game over! The computer won. 🤖");
+    } else {
+        console.log("It's a tie! Well played! 😃");
+    }
 }
 
 console.log(game());
