@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Ensures the body takes the full viewport height */
+    margin: 0;  /* Removes default margin */
+    background-color: #f0f0f0;  /* Optional, to set a background color */
+}
+
+.game-container {
+    background-color: rgb(191, 206, 201);
+    display: flex;
+    flex-direction: column;  /* Aligns content vertically */
+    justify-content: stretch;
+    align-items: center;
+    height: 600px;  /* Increased height */
+    width: 400px;   /* Set width smaller to make it rectangular */
+    border: 1px solid black;  /* Optional, for a border around the container */
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;  /* Aligns content vertically */
+    justify-content: center;  /* Aligns content horizontally */
+    align-items: center; /* Aligns content vertically */
+    width: 100%;  /* Take up full width of the parent */
+    margin-bottom: 100px;
+    border: 1px solid black;  /* Optional, for a border around the result section */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;  /* Even space between buttons */
+    align-items: center;
+    width: 100%;  /* Take up full width of the parent */
+    margin-bottom: 100px;
+    border: 1px solid black;  /* Optional, for a border around the result section */
+}
+
+.square-container{
+    display: flex;
+    justify-content: center;  /* Even space between buttons */
+    align-items: center;
+    border: 1px solid black;  /* Optional, for a border around the result section */
+    
+}
+.choice-btn {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    height: 100px;  /* Adjust button height */
+    width: 100px;   /* Adjust button width */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-btn img {
+    max-width: 80%;  /* Adjust image size inside button */
+    max-height: 80%;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;  /* Take up full width of the parent */
+    border: 1px solid black;  /* Optional, for a border around the result section */
+}
+
+.result{
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid black;  /* Optional, for a border around the result section */
+}

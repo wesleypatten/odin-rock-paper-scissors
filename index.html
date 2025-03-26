@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="game-container">
+        <div class="header-container">
+            <h1>Rock, Paper, Scissors</h1>
+            <h3>Choose your weapon</h3>
+        </div>
+        <!-- Button container for Rock, Paper, Scissors -->
+        <div class="button-container">
+            <div class="square-container"><button class="choice-btn" id="rock" img src="rock.png" alt="Rock"></button></div>
+            <div class="square-container"><button class="choice-btn" id="paper" img src="paper.png" alt="Paper"></button></div>
+            <div class="square-container"><button class="choice-btn" id="scissors" img src="scissors.png" alt="Scissors"></button></div>
+        </div>
+
+        <!-- Result container for the game -->
+        <div class="result-container">
+            <div class="square-container"><p class="result" id="player_score">1</p></div>
+            <div class="square-container"><p class="result" id="versus">VS</p></div>
+            <div class="square-container"><p class="result" id="computer_score">1</p></div>
+        </div>    
+
+    </div>
     
+
+
+    <script src="script.js"></script>
 </body>
 </html>
