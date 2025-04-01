@@ -36,10 +36,10 @@ body {
     margin-bottom: 100px;
     border: 1px solid black;  /* Optional, for a border around the result section */
 }
-
 .square-container{
     display: flex;
     justify-content: center;  /* Even space between buttons */
+    background-color: aqua;
     align-items: center;
     border: 1px solid black;  /* Optional, for a border around the result section */
     
@@ -49,6 +49,7 @@ body {
     border: 1px solid black;
     height: 100px;  /* Adjust button height */
     width: 100px;   /* Adjust button width */
+    background-color: #d0bbd1;
     border-radius: 5px;
     padding: 10px;
     font-size: 16px;
@@ -59,8 +60,8 @@ body {
 }
 
 .choice-btn img {
-    max-width: 80%;  /* Adjust image size inside button */
-    max-height: 80%;
+    max-width: 100%;  /* Adjust image size inside button */
+    max-height: 100%;
 }
 
 .result-container {
